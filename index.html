@@ -1,6 +1,12 @@
+<!DOCTYPE html>
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <link rel="stylesheet" href="index.css">
+        <title>Christmas Movie Selector</title>
     </head>
     <body>
         <h1>🎄 Christmas Movie Selector 📺</h1>
@@ -9,15 +15,21 @@
         </div>
         <form>
             <select id="age-selector">
-                <option value="18+">18+</option>
-                <option value="PG">PG</option>
+                <option value="Age">Select Age Range</option>
+                <option value="18+">Adults only</option>
+                <option value="PG">Family-friendly</option>
             </select>
             <select id="genre-selector">
+                <option value="Genre">Select Genre</option>
                 <option value="Action">Action</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Classic">Classic</option>
+                <option value="Drama">Drama</option>
+                <option value="Horror">Horror</option>
                 <option value="Romance">Romance</option>
             </select>
             <button id="btn" type="button">Select movie</button>
         </form>
-        <script src="index.pack.js"></script>
+        <script src="index.js"></script>
     </body>
 </html>
